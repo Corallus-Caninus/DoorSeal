@@ -4,13 +4,6 @@ from math import asin, atan, pi, cos, sin, sqrt, tan, acos
 import toml
 import os
 
-eps = 1  # epsilon for hollow cone artifacts
-
-"""a nozzle on either end of a hollow cylinder to couple two hoses of different diameter"""
-
-
-#OBJECT PARAMETERS#
-wall_thickness = 2
 def DoorSeal(
     number_fins,
     module_length,

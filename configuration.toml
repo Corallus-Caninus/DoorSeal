@@ -1,0 +1,13 @@
+# all measurements are in millimeters
+
+module_length = 80       #length of each individual segment
+
+door_height = 20         #height from floor to top of door
+door_overlap_height = 10 #height of overlap of seal with door
+door_width = 50          #width of door
+
+number_fins = 8          #number of hinged fins to block the door
+fin_thickness = 2        #thickness of fin
+
+#OBJECT PARAMETERS#
+wall_thickness = 4

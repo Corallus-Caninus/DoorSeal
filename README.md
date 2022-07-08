@@ -7,4 +7,4 @@ to generate scad files:
 edit configuration.toml if necessary
 python3 door_seal.py
 
-requires solidpython to be installed
+requires solidpython and toml to be installed

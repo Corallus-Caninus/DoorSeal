@@ -38,14 +38,14 @@ def DoorSeal(
 
     # create a small cube inside to allow modules to be connected
     coupler = cube(
-        [module_length/2, wall_thickness,door_overlap_height],center=True)
+        [module_length, wall_thickness,door_overlap_height],center=True)
     # move the coupler to the xy plane
     coupler = translate([0,0,door_overlap_height/2])(coupler)
     # move coupler module_length/4 along x axis
     coupler = translate([module_length/2,0,0])(coupler)
     # set one on either end
-    outer_coupler = translate([0,door_width/2 - wall_thickness/2,0])(coupler)
-    inner_coupler = translate([0,-door_width/2 + wall_thickness/2,0])(coupler)
+    outer_coupler = translate([0,door_width/2 + 1.5*wall_thickness,0])(coupler)
+    inner_coupler = translate([0,-door_width/2 - 1.5*wall_thickness,0])(coupler)
 
 
     # create the fins

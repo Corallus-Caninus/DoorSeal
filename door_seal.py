@@ -44,8 +44,8 @@ def DoorSeal(
     # move coupler module_length/4 along x axis
     coupler = translate([module_length/2,0,0])(coupler)
     # set one on either end
-    outer_coupler = translate([0,door_width/2 - wall_thickness,0])(coupler)
-    inner_coupler = translate([0,-door_width/2 + wall_thickness,0])(coupler)
+    outer_coupler = translate([0,door_width/2 - wall_thickness/2,0])(coupler)
+    inner_coupler = translate([0,-door_width/2 + wall_thickness/2,0])(coupler)
 
 
     # create the fins
